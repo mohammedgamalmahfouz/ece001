@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Architecture</title>
+</head>
+<body>
+     <!-- the header lists start -->
+     <button><a href="index.html">Home</a></button>
+     <ul>
+         <li><a href="page1.html">DBMS languages</a></li>
+         <li><a href="page2.html">Types of DataBase</a></li>
+         <li><a href="page3.html">DBMS Architecture</a></li>
+         <li><a href="page4.html">Data Models</a></li>
+     </ul>
+         <!-- the header lists end -->
+     <hr>
+     <img width="50%" style="margin-left: 25%;" src="1-1.jpg" alt="">
+    <h1>DBMS Architecture</h1>
+    <hr>
+    <ul>
+        <li>The DBMS design depends upon its architecture. The basic client/server architecture is used to deal with a large number of PCs, web servers, database servers and other components that are connected with networks.</li>
+        <li>The client/server architecture consists of many PCs and a workstation which are connected via the network.</li>
+        <li>DBMS architecture depends upon how users are connected to the database to get their request done.</li>
+    </ul>
+    <hr>
+    <h1>Types of DBMS Architecture</h1>
+    <img width="50%" style="margin-left: 25%;" src="dbms-architecture.png" alt="">
+    <p>Database architecture can be seen as a single tier or multi-tier. But logically, database architecture is of two types like: 2-tier architecture and 3-tier architecture.</p>
+    <table border="4">
+        <caption><strong>Types of DBMS Architecture</strong></caption>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Images</th>
+        </tr>
+        <tr>
+            <td>1-Tier Architecture</td>
+            <td>
+                <ul>
+                    <li>In this architecture, the database is directly available to the user. It means the user can directly sit on the DBMS and uses it.</li>
+                    <li>Any changes done here will directly be done on the database itself. It doesn't provide a handy tool for end users.</li>
+                    <li>The 1-Tier architecture is used for development of the local application, where programmers can directly communicate with the database for the quick response.</li>
+                </ul>
+            </td>
+            <td><img width="400px" src="3-tier-architecture-10-638.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>2-Tier Architecture</td>
+            <td>
+                <ul>
+                    <li>The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on the client end can directly communicate with the database at the server side. For this interaction, API's like: ODBC, JDBC are used.</li>
+                    <li>The user interfaces and application programs are run on the client-side.</li>
+                    <li>The server side is responsible to provide the functionalities like: query processing and transaction management.</li>
+                    <li>To communicate with the DBMS, client-side application establishes a connection with the server side.</li>
+                </ul>
+            </td>
+            <td><img width="400px" src="dbms-2-tier-architecture.png" alt=""></td>
+        </tr>
+        <tr>
+            <td>3-Tier Architecture</td>
+            <td><ul>
+                <li>The 3-Tier architecture contains another layer between the client and server. In this architecture, client can't directly communicate with the server.</li>
+                <li>The application on the client-end interacts with an application server which further communicates with the database system.</li>
+                <li>End user has no idea about the existence of the database beyond the application server. The database also has no idea about any other user beyond the application.</li>
+                <li>The 3-Tier architecture is used in case of large web application.</li>
+            </ul>
+        </td>
+            <td><img width="400px" src="dbms-3-tier-architecture.png" alt=""></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Designed by Mohamed Gamal Mahfouz Mohamed</h1>
+</body>
+</html>

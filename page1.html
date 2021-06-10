@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS languages</title>
+</head>
+<body>
+    <!-- the header lists start -->
+    <button><a href="index.html">Home</a></button>
+    <ul>
+        <li><a href="page1.html">DBMS languages</a></li>
+        <li><a href="page2.html">Types of DataBase</a></li>
+        <li><a href="page3.html">DBMS Architecture</a></li>
+        <li><a href="page4.html">Data Models</a></li>
+    </ul>
+        <!-- the header lists end -->
+     <hr>
+    <img width="50%" style="margin-left: 25%;" src="7-best-practices-for-database-security.png" alt="">
+    <br>
+    <h1>Database Language</h1>
+    <hr>
+    <ul>
+        <li>A DBMS has appropriate languages and interfaces to express database queries and updates.</li>
+        <li>Database languages can be used to read, store and update the data in the database.</li>
+    </ul>
+    <br>
+    <h1>Types of Database Language</h1>
+    <img width="50%" style="margin-left: 25%;" src="dbms-language.png" alt="">
+    <table border="4">
+        <caption><strong>Types of Database Language</strong></caption>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Images</th>
+        </tr>
+        <tr>
+            <td> Data Definition Language</td>
+            <td>
+                <ul>
+                    <li>DDL stands for Data Definition Language. It is used to define database structure or pattern.</li>
+                    <li>It is used to create schema, tables, indexes, constraints, etc. in the database.</li>
+                    <li>Using the DDL statements, you can create the skeleton of the database.</li>
+                    <li>Data definition language is used to store the information of metadata like the number of tables and schemas, their names, indexes, columns in each table, constraints, etc.</li>
+                </ul>
+                <p>Here are some tasks that come under DDL:</p>
+                <ul>
+                    <li><strong>Create:</strong> It is used to create objects in the database.</li>
+                    <li><strong>Alter:</strong> It is used to alter the structure of the database.</li>
+                    <li><strong>Drop:</strong> It is used to delete objects from the database.</li>
+                    <li><strong>Truncate:</strong> It is used to remove all records from a table.</li>
+                    <li><strong>Rename:</strong> It is used to rename an object.</li>
+                    <li><strong>Comment:</strong> It is used to comment on the data dictionary.</li>
+                </ul>
+                <p>These commands are used to update the database schema that's why they come under Data definition language.</p>
+            </td>
+            <td><img width="400px" src="12.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td> Data Manipulation Language</td>
+            <td><p>DML stands for Data Manipulation Language. It is used for accessing and manipulating data in a database. It handles user requests.</p>
+                <p>Here are some tasks that come under DML:</p>
+                <ul>
+                    <li><strong>Select:</strong> It is used to retrieve data from a database.</li>
+                    <li><strong>Insert:</strong> It is used to insert data into a table.</li>
+                    <li><strong>Update:</strong> It is used to update existing data within a table.</li>
+                    <li><strong>Delete:</strong> It is used to delete all records from a table.</li>
+                    <li><strong>Merge:</strong> It performs UPSERT operation, i.e., insert or update operations.</li>
+                    <li><strong>Call:</strong> It is used to call a structured query language or a Java subprogram.</li>
+                    <li><strong>Explain Plan:</strong> It has the parameter of explaining data.</li>
+                    <li><strong>Lock Table:</strong> It controls concurrency.</li>
+                </ul>
+            </td>
+            <td><img width="400px" src="SQL-DML-Commands.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>Data Control Languages</td>
+            <td><ul>
+                <li>DCL stands for Data Control Language. It is used to retrieve the stored or saved data.</li>
+                <li>The DCL execution is transactional. It also has rollback parameters.</li>
+            </ul>
+            <p>(But in Oracle database, the execution of data control language does not have the feature of rolling back.)</p>
+            <p>Here are some tasks that come under DCL:</p>
+            <ul>
+                <li><strong>Grant:</strong> It is used to give user access privileges to a database.</li>
+                <li><strong>Revoke:</strong> It is used to take back permissions from the user.</li>
+            </ul>
+            <p>There are the following operations which have the authorization of Revoke:
+
+                CONNECT, INSERT, USAGE, EXECUTE, DELETE, UPDATE and SELECT.</p>
+        </td>
+            <td><img width="400px" src="DCL.png" alt=""></td>
+        </tr>
+        <tr>
+            <td>Transaction Control Language</td>
+            <td>
+                <p>TCL is used to run the changes made by the DML statement. TCL can be grouped into a logical transaction.</p>
+                <p>Here are some tasks that come under TCL:</p>
+                <ul>
+                    <li><strong>Commit:</strong> It is used to save the transaction on the database.</li>
+                    <li><strong>Rollback:</strong> It is used to restore the database to original since the last Commit.
+                    </li>
+                </ul>
+            </td>
+            <td><img width="400px" src="Transaction-Control-Language.jpg" alt=""></td>
+        </tr>
+    </table>
+    <hr>
+    
+    <h1>Designed by Mohamed Gamal Mahfouz Mohamed</h1>
+</body>
+</html>
